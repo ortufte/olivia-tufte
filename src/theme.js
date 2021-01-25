@@ -16,6 +16,19 @@ const theme = createMuiTheme({
       text: {
         
       }
+    },
+    MuiContainer: {
+      root: {
+        background: 'rgba(3, 3, 3, 0.5)',
+        padding: '40px',
+        borderRadius: '30px',
+        // opacity: '0.5',
+      }
+    },
+    MuiCard: {
+      root: {
+        padding: '40px'
+      }
     }
   },
   palette: {
@@ -41,30 +54,17 @@ const theme = createMuiTheme({
       // textShadow: '1px 1px 1px #E0AE8E'
 
     },
-    //home subtitle and page headings + login sign up headings
-    h3: {
-      fontFamily: "Montserrat",
-      fontSize: '2rem',
+    // section headlines
+    h2 : {
+      fontFamily: "'Yeseva One', cursive;",
+      fontSize: '4vw',
     },
-    //page content 
+    //page text
     h4: {
-      fontFamily: "Playfair Display"
+      fontFamily: "'Federo', sans-serif;",
+      fontSize: '2vw',
     },
-    //button text - dark grey
-    subtitle2: {
-      color: '#202224',
-      fontFamily: "Montserrat",
-      fontSize: '1.5rem',
-    },
-    h5: {
-      color: '#202224',
-      fontFamily: "Montserrat",
-      fontSize: '1rem',
-    },
-    button: {
-      textTransform: 'none',
-      fontFamily: "Montserrat",
-    },
+  
   },
 });
 

@@ -1,10 +1,9 @@
 import React from 'react';
+import { Typography } from '@material-ui/core'
 
 const Projects = () => {
     return(
-        <div className='projects'>
-            
-        </div>
+        <Typography className='projects' variant="h2" color="primary"> Projects </Typography>
     )
 }
 
