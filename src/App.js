@@ -14,9 +14,11 @@ const useStyles = makeStyles((theme) => ({
       backgroundImage: `url(${process.env.PUBLIC_URL + '/images/background.jpg'})`,
       backgroundSize: 'cover',
       height: '100vh',
-      display: "flex",
+      
     },
     main: {
+      height: '90vh',
+      display: "flex",
       justifyContent: "center",
       alignItems: "center",
       margin: 'auto'

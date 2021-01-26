@@ -9,17 +9,16 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles(() => ({
     card: {
-      
         borderRadius: 5,
         margin: '0px 25px',
-        width: '600px',
+        maxWidth: '600px',
         boxShadow: '20px 20px 20px black',
         display: 'flex',
         justifyContent: 'center',
     } 
 }));
 
-const ProjectCard = ({ content }) => {
+const ProjectCard = ({ project }) => {
 
     const classes = useStyles();
 
@@ -28,19 +27,19 @@ const ProjectCard = ({ content }) => {
             <CardActionArea>
                 <CardMedia
                 component="img"
-                image={content.image}
+                image={project.image}
                 title="project photo"
                 />
             
             <CardContent>
                 <Typography gutterBottom variant="h2" >
-                    {content.title}
+                    {project.title}
                 </Typography>
                 <Typography variant="h4" >
-                    {content.summary}
+                    {project.summary}
                    <br></br>
                    <br></br>
-                    <Typography variant="h3" color="secondary">
+                    <Typography variant="body1" color="secondary">
                         * Demonstration video and link to deployed site coming soon *
                     </Typography>
 

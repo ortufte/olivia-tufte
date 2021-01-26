@@ -50,7 +50,7 @@ const theme = createMuiTheme({
     // user nav
     subtitle1: {
       fontFamily: "'Yeseva One', cursive;",
-      fontSize: 'large',
+      fontSize: '2vw',
       // textShadow: '1px 1px 1px #E0AE8E'
 
     },
@@ -59,9 +59,10 @@ const theme = createMuiTheme({
       fontFamily: "'Yeseva One', cursive;",
       fontSize: 'xx-large',
     },
+    // card 
     h3 : {
       fontFamily: "'Federo', sans-serif;",
-      fontSize: 'large',
+      fontSize: 'xx-large',
       color: '#000000',
       fontWeight: 'bold',
       padding: '10px'
@@ -75,7 +76,10 @@ const theme = createMuiTheme({
       fontFamily: "'Federo', sans-serif;",
       fontSize: 'large',
     },
-   
+    body1: {
+      fontFamily: "'Federo', sans-serif;",
+      fontSize: 'large',
+    },
   
   },
 });
