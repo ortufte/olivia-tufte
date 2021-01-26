@@ -14,7 +14,7 @@ const theme = createMuiTheme({
     },
     MuiButton: {
       text: {
-        
+        fontFamily: "'Yeseva One', cursive;"
       }
     },
     MuiContainer: {
@@ -50,20 +50,32 @@ const theme = createMuiTheme({
     // user nav
     subtitle1: {
       fontFamily: "'Yeseva One', cursive;",
-      fontSize: '1.5vw',
+      fontSize: 'large',
       // textShadow: '1px 1px 1px #E0AE8E'
 
     },
     // section headlines
     h2 : {
       fontFamily: "'Yeseva One', cursive;",
-      fontSize: '4vw',
+      fontSize: 'xx-large',
+    },
+    h3 : {
+      fontFamily: "'Federo', sans-serif;",
+      fontSize: 'large',
+      color: '#000000',
+      fontWeight: 'bold',
+      padding: '10px'
     },
     //page text
     h4: {
       fontFamily: "'Federo', sans-serif;",
-      fontSize: '2vw',
+      fontSize: 'large',
     },
+    subtitle2: {
+      fontFamily: "'Federo', sans-serif;",
+      fontSize: 'large',
+    },
+   
   
   },
 });
