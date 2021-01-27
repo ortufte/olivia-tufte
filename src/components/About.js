@@ -1,10 +1,25 @@
 import React from 'react';
-import { Container, Typography, Card } from '@material-ui/core'
+import { Box, Typography, Card } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+      padding: '20px',
+      borderRadius: '30px',
+      alignItems: 'center',
+      maxWidth: 'md',
+      align:'center',
+      margin: 'auto',
+      },
+  }))
 
 
 const About = () => {
+
+    const classes = useStyles()
+
     return(
-        <Container className='about' maxWidth='md' >
+        <Box className={classes.root}>
             <Card>
                 <Typography variant="body2" color="primary" align='center' >
                 "Unprecedented technological capabilities combined with unlimited 
@@ -38,7 +53,7 @@ const About = () => {
 
                 </Typography>
             </Card>
-        </Container>
+        </Box>
     )
 }
 

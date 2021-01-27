@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
     const classes = useStyles();
 
     return (
-        <Card className={classes.card} display='block'>
+        <Card className={classes.card} display='block' align='center'>
             <CardActionArea>
                 <CardMedia
                 component="img"

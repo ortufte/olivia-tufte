@@ -2,15 +2,18 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ProjectCard from './ProjectCard';
 import Carousel from 'react-material-ui-carousel';
+import { Box } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        textAlign: 'center',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
+      padding: '20px',
+      borderRadius: '30px',
+      alignItems: 'center',
+      maxWidth: 'md',
+      align:'center',
+      margin: 'auto',
       },
-  }))
+}))
 
 const Projects = () => {
 
@@ -51,13 +54,13 @@ const Projects = () => {
     ];
 
     return (
-        <div className={classes.root}>
-            <Carousel interval='10000' >
+      <Box className={classes.root}>
+            <Carousel interval='100000' >
                 {
                     projects.map( (project, i) => <ProjectCard key={i} project={project} /> )
                 }
             </Carousel>
-        </div>
+        </Box>
     )
 }
 
