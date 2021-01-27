@@ -1,11 +1,17 @@
 import React from 'react';
-import { Container, Typography } from '@material-ui/core'
+import { Box, Typography } from '@material-ui/core'
 
 const Blog = () => {
     return(
-        <Container className='about' maxWidth='sm' align='center'>
+        <Box 
+            padding='40px'
+            borderRadius= '30px'
+            alignItems="center"
+            maxWidth='sm'
+            align='center'
+        >
             <Typography variant='h2' color='primary' > COMING SOON! </Typography>
-        </Container>
+        </Box>
     )
 }
 

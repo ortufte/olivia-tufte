@@ -2,32 +2,20 @@ import { createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
   overrides: {
-    // Style sheet name ⚛️
-    MuiDialogContentText: {
-      // Name of the rule
-      root: {
-        // Some CSS
-        color: '#202224',
-        fontFamily: "Montserrat",
-        fontSize: '1rem',
-      },
-    },
-    MuiButton: {
-      text: {
-        fontFamily: "'Yeseva One', cursive;"
-      }
-    },
     MuiContainer: {
       root: {
-        background: 'rgba(3, 3, 3, 0.5)',
+        // background: 'rgba(3, 3, 3, 0.5)',
         padding: '40px',
         borderRadius: '30px',
-        // opacity: '0.5',
+        height: 'auto !important',
+        height: '100%',
       }
     },
     MuiCard: {
       root: {
-        padding: '40px'
+        padding: '40px',
+        // background: 'rgba(228, 209, 178, 0.9)',
+        boxShadow: '10px 10px 20px 10px',
       }
     }
   },
@@ -50,7 +38,7 @@ const theme = createMuiTheme({
     // user nav
     subtitle1: {
       fontFamily: "'Yeseva One', cursive;",
-      fontSize: '2vw',
+      fontSize: '2.5vw',
       // textShadow: '1px 1px 1px #E0AE8E'
 
     },
@@ -59,7 +47,7 @@ const theme = createMuiTheme({
       fontFamily: "'Yeseva One', cursive;",
       fontSize: 'xx-large',
     },
-    // card 
+    // home link
     h3 : {
       fontFamily: "'Federo', sans-serif;",
       fontSize: 'xx-large',
@@ -67,18 +55,20 @@ const theme = createMuiTheme({
       fontWeight: 'bold',
       padding: '10px'
     },
-    //page text
+    //about, connect and project summary text
     h4: {
       fontFamily: "'Federo', sans-serif;",
       fontSize: 'large',
     },
-    subtitle2: {
-      fontFamily: "'Federo', sans-serif;",
-      fontSize: 'large',
-    },
+    //project details and note
     body1: {
       fontFamily: "'Federo', sans-serif;",
-      fontSize: 'large',
+      fontSize: 'medium',
+    },
+    //about quote
+    body2: {
+      fontFamily: "'Yeseva One', cursive;",
+      fontSize: 'medium'
     },
   
   },
