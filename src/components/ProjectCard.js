@@ -30,7 +30,6 @@ const ProjectCard = ({ project }) => {
                 image={project.image}
                 title="project photo"
                 />
-            
             <CardContent>
                 <Typography gutterBottom variant="h2" >
                     {project.title}
@@ -39,7 +38,11 @@ const ProjectCard = ({ project }) => {
                     {project.summary}
                    <br></br>
                    <br></br>
-                    <Typography variant="body1" color="secondary">
+                   <Typography variant="body1" align='left'>
+                        {project.details.map((det , i) => <li key={i}>{det}</li>)}
+                   </Typography>
+                   <br></br>
+                    <Typography variant="body1" color="primary">
                         * Demonstration video and link to deployed site coming soon *
                     </Typography>
 
