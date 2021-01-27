@@ -17,13 +17,13 @@ const Connect = () => {
         >
             <Card>
                 <Typography variant="h2"> Connect </Typography>
-                <IconButton color="primary" href="https://github.com/ortufte" aria-label="go to GitHub">
+                <IconButton color="primary" href="https://github.com/ortufte" target="_blank" aria-label="go to GitHub" >
                     <GitHubIcon fontSize="large" />
                 </IconButton>
-                <IconButton color="primary" href="https://www.linkedin.com/in/olivia-tufte/"  aria-label="go to LinkedIn">
+                <IconButton color="primary" href="https://www.linkedin.com/in/olivia-tufte/" target="_blank" aria-label="go to LinkedIn">
                     <LinkedInIcon fontSize="large" />
                 </IconButton>
-                <IconButton color="primary" href="mailto:ortufte@gmail.com"  aria-label="send email">
+                <IconButton color="primary" href="mailto:ortufte@gmail.com" target="_blank" aria-label="send email">
                     <EmailIcon fontSize="large" />
                 </IconButton>
                 <Typography variant="h4" > 
