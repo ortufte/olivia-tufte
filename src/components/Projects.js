@@ -6,7 +6,7 @@ import { Box } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      padding: '20px',
+      padding: '10px',
       borderRadius: '30px',
       alignItems: 'center',
       maxWidth: 'md',
