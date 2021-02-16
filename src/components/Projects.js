@@ -6,18 +6,24 @@ import { Box } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      padding: '10px',
       borderRadius: '30px',
       alignItems: 'center',
       maxWidth: 'md',
       align:'center',
       margin: 'auto',
       },
+    carousel: {
+      paddingBottom: '20px'
+    }
 }))
 
 const Projects = () => {
 
     const classes = useStyles()
+
+    const timeout = { 
+      enter: 4000, 
+      exit: 2000}
 
     const projects = [
         { title: 'eudaimonia', 
@@ -55,9 +61,9 @@ const Projects = () => {
 
     return (
       <Box className={classes.root}>
-            <Carousel interval='100000' >
+            <Carousel className={classes.carousel} interval='100000' timeout={timeout} >
                 {
-                    projects.map( (project, i) => <ProjectCard key={i} project={project} /> )
+                  projects.map( (project, i) => <ProjectCard key={i} project={project} /> )
                 }
             </Carousel>
         </Box>
