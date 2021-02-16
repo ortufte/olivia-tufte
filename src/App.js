@@ -8,7 +8,8 @@ import Blog from './components/Blog';
 import Connect from './components/Connect';
 import { Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom'
-import { WaveTopBottomLoading } from 'react-loadingg';
+import { NineCellLoading } from 'react-loadingg';
+import FadeIn from 'react-fade-in';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,17 +30,19 @@ const useStyles = makeStyles((theme) => ({
 const App = () => {
 
   const [loading, setLoading] = useState(true);
-
+  
     useEffect(() => {
-        setLoading(!loading)
-        },
-    [])
+      setTimeout(() => {
+         setLoading(!loading);
+       }, 3000);
+     },[]);
 
   const classes = useStyles()
 
   return (
-    
-    !!loading ? <WaveTopBottomLoading color='#E0AE8E'/> : 
+  
+    !!loading ? <NineCellLoading color='#E0AE8E'/> : 
+    <FadeIn transitionDuration='4000'>
     <div className={classes.root}> 
       <Link to="/" style={{ textDecoration: 'none' }}><Typography variant='h3' > OT </Typography></Link>
       <div className={classes.main}>
@@ -52,6 +55,7 @@ const App = () => {
         </Switch>
     </div>
     </div>
+    </FadeIn>
   );
 }
 

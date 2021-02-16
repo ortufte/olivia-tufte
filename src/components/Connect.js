@@ -23,7 +23,7 @@ const Connect = () => {
     const classes = useStyles()
     
     return (
-        <FadeIn transitionDuration='5000'>
+        <FadeIn transitionDuration='4000'>
             <Box className={classes.root}>
                 <Card align='center' >
                     <Typography variant="h2"> Connect </Typography>

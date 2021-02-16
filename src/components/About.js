@@ -3,7 +3,6 @@ import { Box, Typography, Card } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 import FadeIn from 'react-fade-in';
 
-
 const useStyles = makeStyles((theme) => ({
     root: {
       padding: '20px',
@@ -15,13 +14,12 @@ const useStyles = makeStyles((theme) => ({
     },
 }))
 
-
 const About = () => {
 
     const classes = useStyles()
 
     return(
-        <FadeIn transitionDuration='5000'>
+        <FadeIn transitionDuration='4000'>
             <Box className={classes.root}>
                 <Card>
                     <Typography variant="body2" color="primary" align='center' >

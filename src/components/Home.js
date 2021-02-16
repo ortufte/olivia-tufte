@@ -5,7 +5,6 @@ import { Typography } from '@material-ui/core';
 const Home = () => {
 
     return(
- 
         <div>
             <Typography variant='h1' color='secondary' align='center'> OLIVIA </Typography>
             <Nav />

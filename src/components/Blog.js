@@ -4,7 +4,7 @@ import FadeIn from 'react-fade-in';
 
 const Blog = () => {
     return(
-        <FadeIn transitionDuration='5000'>
+        <FadeIn transitionDuration='4000'>
             <Box 
                 padding='40px'
                 borderRadius= '30px'
