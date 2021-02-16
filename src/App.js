@@ -13,7 +13,7 @@ import FadeIn from 'react-fade-in';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-      backgroundImage: `url(${process.env.PUBLIC_URL + '/images/background.jpg'})`,
+      backgroundImage: `url(${process.env.PUBLIC_URL + '/images/background.jpeg'})`,
       backgroundSize: 'cover',
       height: '100vh',
 
@@ -22,8 +22,7 @@ const useStyles = makeStyles((theme) => ({
       height: '90vh',
       display: "flex",
       justifyContent: "center",
-      alignItems: "center",
-      margin: 'auto'
+      margin: 'auto',
     }
 }))
 
