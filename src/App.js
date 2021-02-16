@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Home from './components/Home';
 import { Switch, Route } from 'react-router-dom';
@@ -8,6 +8,7 @@ import Blog from './components/Blog';
 import Connect from './components/Connect';
 import { Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom'
+import { WaveTopBottomLoading } from 'react-loadingg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,9 +28,18 @@ const useStyles = makeStyles((theme) => ({
 
 const App = () => {
 
+  const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        setLoading(!loading)
+        },
+    [])
+
   const classes = useStyles()
 
   return (
+    
+    !!loading ? <WaveTopBottomLoading color='#E0AE8E'/> : 
     <div className={classes.root}> 
       <Link to="/" style={{ textDecoration: 'none' }}><Typography variant='h3' > OT </Typography></Link>
       <div className={classes.main}>

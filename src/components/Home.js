@@ -3,7 +3,9 @@ import Nav from './Nav';
 import { Typography } from '@material-ui/core';
 
 const Home = () => {
+
     return(
+ 
         <div>
             <Typography variant='h1' color='secondary' align='center'> OLIVIA </Typography>
             <Nav />
@@ -13,3 +15,4 @@ const Home = () => {
 }
 
 export default Home
+

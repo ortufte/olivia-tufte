@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: 'md',
       align:'center',
       margin: 'auto',
-      },
+    },
     carousel: {
       paddingBottom: '20px'
     }
