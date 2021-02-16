@@ -4,6 +4,7 @@ import ProjectCard from './ProjectCard';
 import Carousel from 'react-material-ui-carousel';
 import { Box } from '@material-ui/core'
 
+
 const useStyles = makeStyles((theme) => ({
     root: {
       borderRadius: '30px',
